@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Retención de ISLR</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Retención de ISLR</h1>
+        <form id="retencion-form">
+            <label for="montoExonerado">Monto Total Exonerado (Bs):</label>
+            <input type="number" id="montoExonerado" name="montoExonerado" required>
+            
+            <label for="montoConIVA">Monto Total con IVA 16% (Bs):</label>
+            <input type="number" id="montoConIVA" name="montoConIVA" required>
+            
+            <label for="tasa">Tasa de Retención (%):</label>
+            <input type="number" id="tasa" name="tasa" required>
+            
+            <button type="button" onclick="calcularRetencion()">Calcular Retención</button>
+            <button type="button" onclick="reiniciarFormulario()">Reiniciar</button>
+        </form>
+        <div id="resultado"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
